@@ -1,0 +1,134 @@
+body {
+    margin: 0 auto;
+    width: 850px;
+    border: 2px solid black;
+    background: rgb(220, 220, 231);
+}
+
+#content {
+   background-color: rgb(69, 156, 243);
+   padding-bottom: 65px;
+}
+
+select {
+    margin-bottom: 1em;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    padding: 10px;
+    color: white;
+    text-shadow: 1px 2px 2px rgb(12, 26, 32);
+    background-color: rgb(18, 5, 36);
+}
+
+h2 {
+    margin-left: 30px;
+}
+
+label {
+    font-weight: bold;
+}
+
+label.cookies {
+    padding-right: 117px;
+}
+
+label.cake {
+    padding-right: 135px;
+}
+
+label.othercakes {
+    padding-right: 70px;
+}
+
+label.special2 {
+    float: left;
+    margin-right: -29.5px;
+}
+
+label.special {
+    float: left;
+    width: 9.6em;
+}
+
+
+label.marginleft {
+    margin-left: 50px;
+}
+
+label.smallmargin {
+    margin-left: 10px;
+}
+
+label.smallestmargin {
+    margin-left: 2px;
+}
+
+label.ideas {
+    margin-right: 25px;
+}
+
+#ziplabel {
+    margin-left: 40px;
+}
+
+#buy label {
+    width: 13em;
+}
+
+#buy select {
+    margin-right: 175px;
+    width: 200px;
+}
+
+legend {
+    background-color: #003572;
+    color: #fff;
+    padding: 7px;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+fieldset {
+    padding: 15px;
+    margin: 0 15px;
+    background-color: rgb(69, 156, 243);
+}
+
+#submit {
+    width: 40%;
+    margin: 0 auto;
+}
+
+#submit input {
+    padding: 14px 25px;
+    background-color: #003572;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #333;
+    margin: 5px;
+    float: left;
+    text-align: center;
+}
+
+#submit input:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black, -2px -2px 5px black;
+    transition: all 200ms ease-out;
+}
+
+#submit input:active {
+    box-shadow: none;
+}
+
+span {
+    color: rgb(168, 11, 11);
+    font-weight: bold;
+}
+
+#cellspan {
+    margin-left: 500px;
+}

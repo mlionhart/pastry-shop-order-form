@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mike's Form</title>
+</head>
+<body>
+    <div id="content"> <!-- beginning of main content -->
+
+        <h1>Pastry Shop Order Page</h1>
+
+        <div class="errors"></div> <!-- errors div to hold validation error list -->
+
+        <form action="http://ctec.clark.edu/CTEC122/scripts/form_echo.php" method="post" id="order">
+           <fieldset id="basic">
+              <legend>Basic Information</legend>
+              <label for="name" class="special">Full Name:</label>
+              <input type="text" size="50" name="name" id="name" placeholder="First, Middle Initial, Last (e.g. John H. Smith)" />
+              <span id="namespan"></span>
+              <p>
+              <label for="address" class="special">Address:</label>
+              <input type="text" size="50" name="address" id="address" />
+              <span id="addressspan"></span>
+              </p>
+              <p>
+              <label for="city" class="special">City:</label>
+              <input type="text" size="20" name="city" id="city" />
+              <span id="cityspan"></span>
+              <br><br>
+              
+              <label for="state" class="special">State:</label>
+              <input type="text" size="2" name="state" id="state" maxlength="2" />
+              <span id="statespan"></span>
+              
+              <label for="zip" id="ziplabel">Zip Code:</label>
+              <input type="text" size="5" name="zip" id="zip" maxlength="5"/>
+              <span id="zipspan"></span>
+              </p>
+              <label for="email" class="special">Email:</label>
+              <input type="email" size="50" name="email" id="email" />
+              <span id="emailspan"></span>
+              <p>
+              <label for="phone" class="special">Home Phone:</label>
+              <input type="text" size="11" name="phone" id="phone" placeholder="xxx-xxx-xxxx" maxlength="11" />
+              <span id="phonespan"></span>
+
+              <label for="cell" class="marginleft">Cell:</label>
+              <input type="text" size="11" name="cell" id="cell" placeholder="xxx-xxx-xxxx" maxlength="11" />
+              <br><br>
+              <span id="cellspan"></span>
+              </p>
+           </fieldset>
+
+           <fieldset id="otherinfo">
+              <legend>Other Information</legend>
+              
+              <label for="date" class="special">Date:</label>
+              <input type="date" name="date" id="date" />
+              <span id="datespan"></span>
+             
+           </fieldset>
+
+           <fieldset id="buy">
+              <legend>Products You Would Like To Purchase</legend>
+
+              <label for="cookies" class="cookies">Cookies:</label>
+              <select name="cookies" id="cookies">
+                 <option value="choose">Select an Option</option>
+                 <option value="chocolatechip">Chocolate Chip</option>
+                 <option value="snickerdoodle">Snickerdoodle</option>
+                 <option value="sugar">Sugar Cookies</option>
+                 <option value="fudgebrownie">Fudge Brownie</option>
+              </select>
+              <br />
+              <label for="packagenum" class="special2">No. of Packages:</label>
+              <input type="text" size="2" name="packagenum" id="packagenum" />
+              <span id="packagespan"></span>
+              
+              <p>
+              <label for="cake" class="cake">Cake:</label>
+              <select name="cake" id="cake">
+                 <option value="choose">Select an Option</option>
+                 <option value="chocolate">Chocolate</option>
+                 <option value="cheesecake">Cheesecake</option>
+                 <option value="vanilla">Vanilla Cake</option>
+              </select>
+              <br />
+              <label for="cakenum" class="special2">No. of Cakes:</label>
+              <input type="text" size="2" name="cakenum" id="cakenum" />
+              <span id="cakenumspan"></span>
+              </p>
+
+              <p>
+              <label for="othercakes" class="othercakes">Other Pastries:</label>
+              <select name="othercakes" id="othercakes">
+                 <option value="choose">Select an Option</option>
+                 <option value="brownies">Brownies</option>
+                 <option value="vanillacupcakes">Vanilla Cupcakes</option>
+                 <option value="chocolatecupcakes">Chocolate Cupcakes</option>
+              </select>
+              <br />
+              <label for="othercakenum" class="special2">No. of Cakes:</label>
+              <input type="text" size="2" name="othercakenum" id="othercakenum" />
+              <span id="othercakespan"></span>
+              <br><br>
+              <span id="selectspan"></span>
+              </p>
+           </fieldset>
+
+           <fieldset id="ideas">
+              <legend>What Products Would You Like to See Us Sell More Of?</legend>
+              <input type="checkbox" name="ideas[]" id="pies" value="pies" />
+              <label for="pies" class="ideas">Pies</label>
+
+              <input type="checkbox" name="ideas[]" id="pastries" value="pastries" />
+              <label for="pastries" class="ideas">Pastries</label>
+
+              <input type="checkbox" name="ideas[]" id="donuts" value="donuts" />
+              <label for="donuts" class="ideas">Donuts</label>
+              <span id="ideaspan"></span>
+           </fieldset>
+
+           <fieldset id="comments">
+              <legend>Comments or Suggestions</legend>
+              <textarea name="comments" rows="5" cols="70" placeholder="Enter Your Comments Here"></textarea>
+           </fieldset>
+           
+           <div id="submit"> <!-- div for buttons -->
+           <input type="submit" value="Submit" />
+           <input type="reset" value="Start Over" />
+           </div> <!-- end of buttons div -->
+
+        </form> <!-- end of form -->
+
+     </div>  <!-- end of content -->
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+     <script src="js/script.js"></script>
+
+</body>
+</html>
